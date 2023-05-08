@@ -10,4 +10,5 @@
   발생한 사건을 인지하고, 적절한 동작을 수행하는 것.
 
 <br/> </br>
+### STUDY 후기
 front-end의 전반적인 구성(HTML, CSS, JAVASCRIPT)을 파악할 수 있었다.
