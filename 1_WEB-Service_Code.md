@@ -1,12 +1,11 @@
 # Code  
   1) HTML
   2) JAVASCRIPT
-  3) CSS  
  
 <br/></br> 
 
 ### 1. HTML  
-- HTML연습
+- **HTML 구조**
 ```html
 <!DOCTYPE html>
 <html lang="ko">
@@ -57,9 +56,13 @@ generateBtn.addEventListener('click', ()=> {  // addEventListener : 'click'이�
     img.src = imgUrl; //img 태그의 src 소스 속성 안에 외부 API요청의 이미지 결과를 넣어주고
 
     gridContainer.appendChild(img); // 해당 이미지 요소를 화면에 보여줄 대상을 선택해서 이 대상에 추가
+    
+    // 이미지가 30개 이상일 경우, 모든 이미지 삭제/유지 여부를 선택하는 팝업창 생성
+    if (gridContainer.children.length >= 30) {	// grindContainer의 자식 요소가 30개 이상일 경우의 조건식
+        const confirmed = confirm("이미지가 30개 입니다. 모든 사진을 지우시겠습니까?");	// OK/NO의결과값을 confirmed에 넣음 
+        if (confirmed) {	// confirmed가 OK일 경우의 액션(=All delete)
+            gridContainer.innerHTML = "";
+        }
+    }
 });
 ```
-
-<br/></br> 
-
-### 3. CSS
