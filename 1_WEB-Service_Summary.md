@@ -1,4 +1,4 @@
-# WEB Service Summary feat.ChatCPT
+# WEB Service Summary
 
 ### HTML & CSS & JAVASCRIPT 관계정리
 - html로 골격을 잡으면 css로 스타일링한다.  
